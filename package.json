@@ -1,0 +1,28 @@
+{
+  "name": "proyectonextjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "next": "^10.0.7",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+     "dev": "next",
+     "build": "next build",
+     "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carolainseija/proyectonextjs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carolainseija/proyectonextjs/issues"
+  },
+  "homepage": "https://github.com/carolainseija/proyectonextjs#readme"
+}
