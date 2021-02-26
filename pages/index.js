@@ -1,7 +1,11 @@
+import React from 'react';
+import Navbar from "../components/Navbar";
+
 const index = ()=> {
     return(
         <>
-        <h1>Este es un index de prueba</h1>
+        <Navbar />
+        <h1>Este es un index de prueba de NextJs</h1>
         </>
     )
 }
