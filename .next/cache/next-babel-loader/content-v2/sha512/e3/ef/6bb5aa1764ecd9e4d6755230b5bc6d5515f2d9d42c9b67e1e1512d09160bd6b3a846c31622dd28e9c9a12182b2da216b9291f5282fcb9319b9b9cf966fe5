@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { Fragment as _Fragment } from \"react/jsx-runtime\";\nimport { jsx as _jsx } from \"react/jsx-runtime\";\n\nconst index = () => {\n  return /*#__PURE__*/_jsx(_Fragment, {\n    children: /*#__PURE__*/_jsx(\"h1\", {\n      children: \"Este es un index de prueba\"\n    })\n  });\n};\n\nexport default index;","map":null,"metadata":{},"sourceType":"module"}
