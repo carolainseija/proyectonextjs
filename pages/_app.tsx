@@ -1,8 +1,6 @@
 //import Layout from "components/Layout/Layout"
-//import Layout from "../components/Layout/Layout";
+
 import { AppProps } from "next/app";
-
-
 
 
 function MyApp({ Component, pageProps }: AppProps ) {
@@ -14,8 +12,7 @@ function MyApp({ Component, pageProps }: AppProps ) {
          *props adicionales
      */}
     return ( 
-    <Component {...pageProps} />
-
+            <Component {...pageProps} />
     )
 }
 
