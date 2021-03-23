@@ -16,11 +16,9 @@ const HomePage = () => {
   return (
     <div>
       <div>
-        <p style={{fontSize: "40px", fontFamily: "monospace"}}> La primera tienda Online de Aguacates en Uruguay!!</p>
+        <p style={{fontSize: "40px", fontFamily: "monospace", backgroundColor: "orange", textAlign: "center"}}> La primera tienda Online de Aguacates en Uruguay!!</p>
        </div>
-      <div style={{width: "70%", backgroundColor: "rgb(180, 180, 180)"}}>
       <ProductList products={productList} />
-      </div>
     </div>
   )
 };
