@@ -9,20 +9,15 @@ type ProductListProps = {
 
 const mapProductsToCards = (products: TProduct[]) =>
   products.map(({ name, id, price, image }) => (
-
-      
-      <div style={{display: "inline-block", marginLeft: "150px", border: "1px solid rgb(180, 180, 180)"}}>
+    <div style={{ display: "inline-block", marginLeft: "150px", border: "1px solid rgb(180, 180, 180)" }}>
       <Card
         as="a"
         header={name}
         image={image}
-        meta={<Card.Meta style={{ backgroundColor: "orange" , color: 'dimgray'}}> Precio: {price} $ </Card.Meta>}
+        meta={<Card.Meta style={{ backgroundColor: "orange", color: 'dimgray' }}> Precio: {price} $ </Card.Meta>}
       />
-
-<AddToCart />
-      </div>
-
-    
+      <AddToCart />
+    </div>
   ))
 
 const ProductList = ({ products }: ProductListProps) => (

@@ -6,7 +6,7 @@ import ProductCanast from '../KawaiiHeader/ProductCanast';
 
 const AnimatedHeader = () => (
   <Header size="huge" as="h1">
-    <div style={{ display: "flex", alignItems: "center", marginLeft: "700px" }}>
+    <div style={{ display: "flex", alignItems: "center", marginLeft: "650px" }}>
       TIENDA
       <Avocado size="58px" />
     AVOS

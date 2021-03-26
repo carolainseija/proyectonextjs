@@ -3,23 +3,41 @@ import { Input, Icon, Transition } from 'semantic-ui-react';
 
 const AddToCart = () => {
  
-const [error, setError] = useState(false)
+const [loading, setLoading] = useState(false)
+  const [error, setError] = useState('')
+  const [quantity, setQuantity] = useState(1)
+  
+  
+  const handleSubmit = async () => {
+   alert('Ya hemos añadido el producto a tu canasta')
+    console.log('quanty total', quantity)
+
+  }
+
+const  handleChange = (e)=> {
+  console.log('handle change')
+  setQuantity(e.target.value);
+}
 
   return (
     <>
-      <Input
+    <Input
         type="number"
-        placeholder="Cantidad"
+        placeholder="Quantity"
+        value={quantity}
         min={1}
         step={1}
         error={!!error}
+        onChange={handleChange}
         action={{
-          fontSize: "30px",
-          className:"carts",
-          content: 'Añadir al Carro',
+          color: 'green',
+          content: 'Add to Cart',
           icon: 'plus cart',
+          onClick: handleSubmit,
+          loading,
+          disabled: loading,
         }}
-      />
+      /> 
    
     
     </>
