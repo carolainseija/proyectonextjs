@@ -1,6 +1,7 @@
 import ProductList from '../components/ProductList/ProductList';
 import React, {useState, useEffect} from 'react'
 import AnimatedHeader from '../components/KawaiiHeader/AnimatedHeader';
+import Footer from '../components/Footer/Footer';
 
 const HomePage = () => {
   const [productList, setProductList] = useState<TProduct[]>([])
@@ -18,9 +19,10 @@ const HomePage = () => {
     <div>
       <div>
         <AnimatedHeader />
-        <p style={{fontSize: "40px", fontFamily: "monospace", backgroundColor: "orange", textAlign: "center"}}> La primera tienda Online de Aguacates en Uruguay!!</p>
+        <p style={{fontSize: "40px", fontFamily: "monospace", backgroundColor: "orange", textAlign: "center"}}> El primer Mercado Online de Aguacates en Uruguay!!</p>
        </div>
       <ProductList products={productList} />
+      <Footer />
     </div>
   )
 };
